@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#24736279"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="課題０７ クイズアプリ" />
+
+    <TextView
+        android:id="@+id/author"
+        android:gravity="right"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IH13B 15 小林駿" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:id="@+id/quiz_man_maru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img" />
+
+    <TextView
+        android:id="@+id/tap_to_back"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap To Start" />
+</LinearLayout>
+
+
+
