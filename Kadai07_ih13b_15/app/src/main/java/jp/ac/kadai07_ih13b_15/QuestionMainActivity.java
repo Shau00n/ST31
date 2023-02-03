@@ -22,10 +22,7 @@ public class QuestionMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_question_main);
 
         Button checkTheAnswerBtn = findViewById(R.id.selected_answer);
-        checkTheAnswerBtn.setOnClickListener(view -> checkTheAnswer());
-
-
-
+        checkTheAnswerBtn.setOnClickListener(view -> checkTheAnswerBtn());
 
         TextView tvExamination = findViewById(R.id.examination_sentence);
         RadioGroup radioGroup = findViewById(R.id.answer_group);
@@ -77,11 +74,12 @@ public class QuestionMainActivity extends AppCompatActivity {
     }
 
     private void checkTheAnswerBtn(){
+        int anum = 1;
         Intent intent = new Intent(QuestionMainActivity.this,CheckAnswerActivity.class);
 
         intent.putExtra("ans",selectedAnswer);
 
-        intent.putExtra("correctAnswer",1);
+        intent.putExtra("correctAnswer",anum);
 
 
         startActivity(intent);
